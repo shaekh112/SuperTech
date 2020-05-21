@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-28T20:50:04Z" name="Default suite" finished-at="2020-04-28T20:50:17Z" duration-ms="13744">
+    <groups>
+    </groups>
+    <test started-at="2020-04-28T20:50:04Z" name="Default test" finished-at="2020-04-28T20:50:17Z" duration-ms="13744">
+      <class name="manualtoAutomation.HowToFindPoinOfWebelement">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:manualtoAutomation.HowToFindPoinOfWebelement@17c386de]" started-at="2020-04-28T20:50:04Z" name="openBrowser" finished-at="2020-04-28T20:50:14Z" duration-ms="10513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="FindPoinOfWebelement()[pri:0, instance:manualtoAutomation.HowToFindPoinOfWebelement@17c386de]" started-at="2020-04-28T20:50:14Z" name="FindPoinOfWebelement" finished-at="2020-04-28T20:50:14Z" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindPoinOfWebelement -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:manualtoAutomation.HowToFindPoinOfWebelement@17c386de]" started-at="2020-04-28T20:50:14Z" name="closeBrowser" finished-at="2020-04-28T20:50:17Z" duration-ms="3088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- manualtoAutomation.HowToFindPoinOfWebelement -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
