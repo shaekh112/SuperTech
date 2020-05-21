@@ -1,25 +1,18 @@
 package Test;
 
-
-
-
-
-import java.sql.Driver;
-
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import Basepake.BaseClass;
-import page.BNGpage;
 import page.BNSpage;
 
-
-public class BNGPageTest<SubmitPage> extends BaseClass {
+public class BNSPageTest extends BaseClass {
+	
 	@Test
 	public void bnsSignup() throws InterruptedException {
 		
-		BNGpage bnsp=(BNGpage) PageFactory.initElements(driver, BNGpage.class);
-		driver.get("file:///C:/ITTraining/MyWebsite/MyWebSite.html");
+		BNSpage bnsp=PageFactory.initElements(driver, BNSpage.class);
+		driver.get("file:///C:/ITTraining/BNS.html");
 		bnsp.enterFirstName("Mashurul");
 		
 		bnsp.enterLastName("Alim");
@@ -30,7 +23,7 @@ public class BNGPageTest<SubmitPage> extends BaseClass {
 		bnsp.selectDay("10");
 		bnsp.selectYear("2003");
 		bnsp.clickOnMalebutton();
-		bnsp.clickOnDLcheckbox();
+		
 		bnsp.clickOnSubmitbutton();
 		Thread.sleep(4000);
 	

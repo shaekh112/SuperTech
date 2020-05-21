@@ -15,7 +15,7 @@ public class superTechPageTest extends BaseClass {
 	public void SuperTech() throws InterruptedException {
 		SuperTechPage stp=PageFactory.initElements(driver, SuperTechPage.class);
 		
-		driver.get("file:///C:/ITTraining/WebSite/WebSite/SuperTech.html");
+		driver.get("file:///C:/ITTraining/WebSite/SuperTech.html");
 		stp.mouseHover();
 		
 		stp.clickOnGoogle();
@@ -33,7 +33,7 @@ public class superTechPageTest extends BaseClass {
 	ArrayList<String>supertab=new ArrayList<String>(driver.getWindowHandles());
 	driver.switchTo().window(supertab.get(0));
 	}	
-	@Test(priority=0)
+	@Test(priority=2)
 	public void iframeTest() throws InterruptedException {
 		SuperTechPage stp=PageFactory.initElements(driver, SuperTechPage.class);
 		stp.enterEiframeFName("Alim");
