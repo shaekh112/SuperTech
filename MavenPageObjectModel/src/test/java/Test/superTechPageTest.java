@@ -11,7 +11,7 @@ import page.SuperTechPage;
 
 public class superTechPageTest extends BaseClass {
 	
-	@Test
+	@Test(priority=0)
 	public void SuperTech() throws InterruptedException {
 		SuperTechPage stp=PageFactory.initElements(driver, SuperTechPage.class);
 		
@@ -24,7 +24,7 @@ public class superTechPageTest extends BaseClass {
 		driver.switchTo().window(googletab.get(1));
 		Thread.sleep(4000);
 	}
-	@Test
+	@Test(priority=1)
 	public void googleTest() throws InterruptedException {
 	GooglePage gop=PageFactory.initElements(driver, GooglePage.class);
 	gop.enterSearchItem("Bangladesh");
@@ -33,7 +33,7 @@ public class superTechPageTest extends BaseClass {
 	ArrayList<String>supertab=new ArrayList<String>(driver.getWindowHandles());
 	driver.switchTo().window(supertab.get(0));
 	}	
-	@Test
+	@Test(priority=0)
 	public void iframeTest() throws InterruptedException {
 		SuperTechPage stp=PageFactory.initElements(driver, SuperTechPage.class);
 		stp.enterEiframeFName("Alim");
