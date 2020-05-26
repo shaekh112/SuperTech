@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 
-import Basepake.BaseClass;
-
 public class BNSpage {
 
 	@FindBy(xpath="html/body/div/div[2]/form/input[1]")
@@ -30,7 +28,7 @@ public class BNSpage {
 	public void enterPassword(String pw) {
 		Password.sendKeys(pw);
 	}
-	//@FindBy(xpath="//*[@id=\"PH\"]")
+	//@FindBy(path="//*[@id=\"PH\"]")
 	@FindBy(how=How.XPATH, using="//*[@id='PH']")
 	WebElement PhoneNumber;
 	public void enterPhoneNumber(String pn) {
