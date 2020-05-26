@@ -27,7 +27,7 @@ public class superTechPageTest extends BaseClass {
 	@Test(priority=1)
 	public void googleTest() throws InterruptedException {
 	GooglePage gop=PageFactory.initElements(driver, GooglePage.class);
-	gop.enterSearchItem("Bangladesh");
+	gop.enterSearchItem("New Yourk");
 	
 	Thread.sleep(4000);
 	ArrayList<String>supertab=new ArrayList<String>(driver.getWindowHandles());
