@@ -19,7 +19,7 @@ public class superTechPageTest extends BaseClass {
 		stp.mouseHover();
 		
 		stp.clickOnGoogle();
-		
+		System.out.println("+++++++++++++++++++++++");
 		ArrayList<String>googletab=new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(googletab.get(1));
 		Thread.sleep(4000);
